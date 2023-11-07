@@ -15,14 +15,14 @@ No rodapé da página index.html, bem como nas restantes páginas criadas, deve 
 
 ## Fases da tarefa
 
-1. Cada aluno deve ler os recursos partilhados para consolidar os conhecimentos na criação da sites em HTML, e aprender a desenvolver um SPA através de qualquer framework: VueJS ou AngularJS.
+[ ] Cada aluno deve ler os recursos partilhados para consolidar os conhecimentos na criação da sites em HTML, e aprender a desenvolver um SPA através de qualquer framework: VueJS ou AngularJS.
 
-2. Cada aluno deve apresentar uma prototipagem que simule a aparência e a funcionalidade do produto Web, como documentação do projeto. Neste caso, o tipo de prototipagem a usar é o wireframe, onde deve ser apresentado todas as páginas a desenvolver.
+[ ] Cada aluno deve apresentar uma prototipagem que simule a aparência e a funcionalidade do produto Web, como documentação do projeto. Neste caso, o tipo de prototipagem a usar é o wireframe, onde deve ser apresentado todas as páginas a desenvolver.
 
-3. Cada aluno deve desenvolver o ficheiro SPA, usando uma framework: VueJS ou AngularJS com os requisitos apresentados.
+[ ] Cada aluno deve desenvolver o ficheiro SPA, usando uma framework: VueJS ou AngularJS com os requisitos apresentados.
 
-4. Todos os ficheiros desenvolvidos devem ser submetidos na plataforma Git, onde cada aluno deve criar uma conta individual. O projeto no Git deve-se chamar de MiniProj1. A avaliação do projeto será realizada a partir dos ficheiros existentes no Git.
+[ ] Todos os ficheiros desenvolvidos devem ser submetidos na plataforma Git, onde cada aluno deve criar uma conta individual. O projeto no Git deve-se chamar de MiniProj1. A avaliação do projeto será realizada a partir dos ficheiros existentes no Git.
 
-5. Todos os ficheiros produzidos devem ser igualmente carregados na "Submissão da Tarefa 2.2", juntamente com um ficheiro a indicar o link do projeto Git criado para este efeito.
+[ ] Todos os ficheiros produzidos devem ser igualmente carregados na "Submissão da Tarefa 2.2", juntamente com um ficheiro a indicar o link do projeto Git criado para este efeito.
 
-6. Deveis contribuir para o debate em geral, comentando e opinando (sustentadamente, tal como nas alíneas anteriores) as intervenções dos colegas, e apoiando os colegas na resolução de dúvidas, usando para o efeito o fórum da tarefa.
+[ ] Deveis contribuir para o debate em geral, comentando e opinando (sustentadamente, tal como nas alíneas anteriores) as intervenções dos colegas, e apoiando os colegas na resolução de dúvidas, usando para o efeito o fórum da tarefa.
