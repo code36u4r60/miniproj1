@@ -11,11 +11,16 @@
         </div>
         <div class="rigth">
             <div class="links">
-                <a href="http://" target="_blank" class="link"><ph-envelope :size="32" /></a>
-                <a href="http://" target="_blank" class="link"><ph-linkedin-logo :size="32" /></a>
-                <a href="http://" target="_blank" class="link"><ph-facebook-logo :size="32" /></a>
-                <a href="http://" target="_blank" class="link"><ph-twitter-logo :size="32" /></a>
-                <a href="http://" target="_blank" class="link"><ph-github-logo :size="32" /></a>
+                <a href="mailto:eduardo.afq@hotmail.com">
+                    <ph-envelope :size="32" />
+                </a>
+                <a href="https://www.linkedin.com/in/eduardoqueiros/" target="_blank" class="link"><ph-linkedin-logo
+                        :size="32" /></a>
+                <a href="https://www.facebook.com/code36u4r60/" target="_blank" class="link"><ph-facebook-logo
+                        :size="32" /></a>
+                <a href="https://twitter.com/eduardo27929195" target="_blank" class="link"><ph-twitter-logo
+                        :size="32" /></a>
+                <a href="https://github.com/code36u4r60" target="_blank" class="link"><ph-github-logo :size="32" /></a>
             </div>
         </div>
     </footer>
@@ -44,7 +49,7 @@
 
         .links{
             display: flex;
-            gap: .25rem;
+            gap: .5rem;
 
             a{
                 display: flex;

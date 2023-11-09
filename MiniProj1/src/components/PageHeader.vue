@@ -16,7 +16,10 @@ function handleThemeChange() {
 <template>
     <section class="pageHeader">
         <div class="left">
-            <p class="brand">Eduardo.AFQ</p>
+            <RouterLink to="/" class="link">
+                <p class="brand">Eduardo.AFQ</p>
+            </RouterLink>
+
         </div>
         <div class="rigth">
             <div class="links">
@@ -25,8 +28,8 @@ function handleThemeChange() {
                 <RouterLink to="/hobbies" class="link">Hobbies</RouterLink>
             </div>
             <div class="theme" @click="handleThemeChange">
-                <ph-sun v-if="isDarkThemeSelected" :size="32" />
-                <ph-moon-stars v-if="!isDarkThemeSelected" :size="32" />
+                <ph-sun v-if="isDarkThemeSelected" :size="32" class="sun" />
+                <ph-moon-stars v-if="!isDarkThemeSelected" :size="32" class="moon" />
             </div>
         </div>
     </section>
@@ -61,14 +64,6 @@ function handleThemeChange() {
         .links{
             display: flex;
             gap: 1rem;
-
-            .link{
-                color: var(--color-heading);
-                font-size: 1.2rem;
-                font-weight: 500;
-                color: var(--color-heading);
-            }
-
         }
 
         .theme{
@@ -76,9 +71,25 @@ function handleThemeChange() {
             display: flex;
             align-items: center;
             width: 2.5rem;
+            cursor: pointer;
+
+            .sun:hover{
+                color:gold;
+            }
+            .moon:hover{
+                color:#263238;
+            }
         }
 
     }
+
+    .link{
+        color: var(--color-heading);
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-decoration: none !important;
+    }
+
 }
 
 
