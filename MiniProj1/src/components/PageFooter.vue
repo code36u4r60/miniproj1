@@ -1,0 +1,62 @@
+
+<script setup lang="ts">
+
+</script>
+
+<template>
+    <footer class="pageHeader">
+        <div class="left">
+            <p>@2023 Eduardo Queirós</p>
+            <small>Todos os diretos reservados</small>
+        </div>
+        <div class="rigth">
+            <div class="links">
+                <a href="http://" target="_blank" class="link"><ph-envelope :size="32" /></a>
+                <a href="http://" target="_blank" class="link"><ph-linkedin-logo :size="32" /></a>
+                <a href="http://" target="_blank" class="link"><ph-facebook-logo :size="32" /></a>
+                <a href="http://" target="_blank" class="link"><ph-twitter-logo :size="32" /></a>
+                <a href="http://" target="_blank" class="link"><ph-github-logo :size="32" /></a>
+            </div>
+        </div>
+    </footer>
+</template>
+
+<style lang="stylus" scoped>
+.pageHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    
+    .left{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
+    
+    .rigth{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 1.5rem;
+
+        .links{
+            display: flex;
+            gap: .25rem;
+
+            a{
+                display: flex;
+                align-items: center;
+                color: inherit;
+            }
+
+        }
+
+    }
+}
+
+
+</style>
+

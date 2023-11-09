@@ -1,21 +1,25 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
-import PageHeader from './components/PageHeader.vue'
+
+import  PageHeader  from './components/PageHeader.vue'
+import  PageFooter  from './components/PageFooter.vue'
 
 </script>
 
 <template>
-  <main>
-    <PageHeader github-url="https://github.com/code36u4r60" linkedin-url="https://www.linkedin.com/in/eduardoqueiros/" mail-url="eduardo.afq@hotmail.com" />
-
-    <nav>
-      <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="/about">About</RouterLink>
-    </nav>
+  <div class="view">
+    <PageHeader />
     <RouterView />
-  </main>
+    <PageFooter />
+  </div>
 </template>
 
 <style scoped>
+.view {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 @media (min-width: 1024px) {}
 </style>

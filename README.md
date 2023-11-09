@@ -15,9 +15,10 @@ No rodapé da página index.html, bem como nas restantes páginas criadas, deve 
 
 ## Fases da tarefa
 
-[X] Cada aluno deve ler os recursos partilhados para consolidar os conhecimentos na criação da sites em HTML, e aprender a desenvolver um SPA através de qualquer framework: VueJS ou AngularJS.
+[x] Cada aluno deve ler os recursos partilhados para consolidar os conhecimentos na criação da sites em HTML, e aprender a desenvolver um SPA através de qualquer framework: VueJS ou AngularJS.
 
-[ ] Cada aluno deve apresentar uma prototipagem que simule a aparência e a funcionalidade do produto Web, como documentação do projeto. Neste caso, o tipo de prototipagem a usar é o wireframe, onde deve ser apresentado todas as páginas a desenvolver.
+
+[x] Cada aluno deve apresentar uma prototipagem que simule a aparência e a funcionalidade do produto Web, como documentação do projeto. Neste caso, o tipo de prototipagem a usar é o wireframe, onde deve ser apresentado todas as páginas a desenvolver.
 
 [Wireframe - MiniProj1](https://www.figma.com/file/SPxIbQjglJ34kFrDOo6Tnm/MiniProj1?type=design&node-id=0%3A1&mode=dev)
 

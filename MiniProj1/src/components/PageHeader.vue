@@ -1,35 +1,35 @@
+
 <script setup lang="ts">
-defineProps<{
-    linkedinUrl: string
-    githubUrl: string
-    mailUrl: string
-}>()
+import { ref, watch } from "vue";
+
+var isDarkThemeSelected = ref(false)
+
+watch(isDarkThemeSelected, (value) => {
+    document.documentElement.setAttribute('data-theme', value ? 'dark' : 'light');
+});
+
+function handleThemeChange() {
+    isDarkThemeSelected.value = !isDarkThemeSelected.value;
+}
 </script>
 
 <template>
-    <div class="pageHeader">
-
+    <section class="pageHeader">
         <div class="left">
-            <a :href="linkedinUrl" target="_blank">
-                <ph-linkedin-logo :size="32" />
-            </a>
-            <a :href="githubUrl" target="_blank">
-                <ph-github-logo :size="32" />
-            </a>
+            <p class="brand">Eduardo.AFQ</p>
         </div>
-
         <div class="rigth">
-
-            <a :href="'mailto:' + mailUrl">
-                <ph-envelope :size="32" />
-                <span>
-                    Send me an email
-                </span>
-            </a>
-
+            <div class="links">
+                <RouterLink to="/" class="link">Home</RouterLink>
+                <RouterLink to="/dailylife" class="link">Daily Life</RouterLink>
+                <RouterLink to="/hobbies" class="link">Hobbies</RouterLink>
+            </div>
+            <div class="theme" @click="handleThemeChange">
+                <ph-sun v-if="isDarkThemeSelected" :size="32" />
+                <ph-moon-stars v-if="!isDarkThemeSelected" :size="32" />
+            </div>
         </div>
-
-    </div>
+    </section>
 </template>
 
 <style lang="stylus" scoped>
@@ -43,7 +43,12 @@ defineProps<{
         flex: 1;
         display: flex;
         align-items: center;
-        gap: 1rem;
+        
+        .brand{
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--color-heading);
+        }
     } 
     
     .rigth{
@@ -51,24 +56,31 @@ defineProps<{
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        gap: 1rem;
+        gap: 1.5rem;
 
-        a{
+        .links{
             display: flex;
-            flex-direction: row;
-            gap: .5rem;
-            align-items: center;
+            gap: 1rem;
 
-            span{
-                font-size: 1rem;
+            .link{
+                color: var(--color-heading);
+                font-size: 1.2rem;
                 font-weight: 500;
+                color: var(--color-heading);
             }
+
         }
+
+        .theme{
+            color: var(--color-heading);
+            display: flex;
+            align-items: center;
+            width: 2.5rem;
+        }
+
     }
 }
 
 
 </style>
-
-
 
