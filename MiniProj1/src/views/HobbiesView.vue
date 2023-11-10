@@ -38,29 +38,32 @@ import IconMountain from "../components/icons/IconMountain.vue";
 <style scoped lang="stylus">
 
 .hobbies{
+  
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-
+  flex-wrap: wrap;
+  gap: 2rem;
   .card {
-      background-color: #D9D9D9;
+      background-color: var(--color-background-mute) !important;
       border-radius: .5rem;
       padding: 1rem;
 
       height: 25rem; 
-      width: 20rem;
+      min-width: 20rem;
 
       display: flex;
       flex-direction: column;
-      gap: 1rem;      
+      flex: 1;
+      gap: 1rem;     
       
       .icon {
           height: 4rem;
-          color: var(--color-heading);
       }
 
       .description{
         flex: 1;
+        color: var(--color-text);
         display: flex;
         flex-direction: column;
         padding: 1.5rem;
@@ -75,5 +78,20 @@ import IconMountain from "../components/icons/IconMountain.vue";
     }
 }
 
+@media (max-width: 1200px) {
+  .hobbies{
+  padding-inline: 2rem;
+}
+}
+
+
+@media (max-width: 768px) {
+  .hobbies{
+    padding-inline: 0rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+}
 
 </style>

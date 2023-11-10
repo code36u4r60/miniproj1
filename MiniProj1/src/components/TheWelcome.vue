@@ -54,8 +54,27 @@
   }
   .presentation{
     padding-inline: 10rem;
+    text-align: justify;
   }
 
 }
+
+@media (max-width: 768px) {
+  .about-me{
+    gap: 0.5rem;
+    .info {
+          .title {
+            font-size: 2rem;
+          }
+          .sub-title {
+            font-size: 1.25rem;
+          }
+    }
+    .presentation{
+        padding-inline: 2rem;
+      }
+  }
+}
+
 
 </style>

@@ -48,7 +48,7 @@ import IconVueJs from "./icons/IconVueJs.vue";
                 Hard-Skills
             </h1>
             <div class="skills">
-                <p class="skill"><ph-users-three :size="24"/>Trabalho em Equipe</p>
+                <p class="skill"><ph-users-three :size="24" />Trabalho em Equipe</p>
                 <p class="skill"><ph-baby :size="24" />Empatia</p>
                 <p class="skill"><ph-bandaids :size="24" />Resolução de Problemas</p>
                 <p class="skill"><ph-steps :size="24" />Pensamento Crítico</p>
@@ -61,7 +61,7 @@ import IconVueJs from "./icons/IconVueJs.vue";
 
 <style scoped lang="stylus">
 .card {
-    background-color: #D9D9D9;
+    background-color: var(--color-background-mute);
     border-radius: .5rem;
     padding: 1rem;
     flex: 1;
@@ -91,14 +91,17 @@ import IconVueJs from "./icons/IconVueJs.vue";
         .title{
             font-size: 1.25rem;
             font-weight: bold;
+            color: var(--color-text);
         }
         .skills{
             display: flex;
             flex-direction: row;
-           justify-content: space-around;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 1rem;
 
-
-            .skill{
+            .skill{    
+                fill: red !important;   
                 width: 48px;
                 height: 48px;
             }
@@ -115,12 +118,14 @@ import IconVueJs from "./icons/IconVueJs.vue";
         .title{
             font-size: 1.25rem;
             font-weight: bold;
+            color: var(--color-text);
         }
         .skills{
             display: flex;
             flex-direction: row;
             justify-content: space-around;
-
+            flex-wrap: wrap;
+            gap: 1rem;
             .skill{
                 display: flex;
                 gap: 0.5rem;
@@ -130,5 +135,13 @@ import IconVueJs from "./icons/IconVueJs.vue";
     }
 }
 
-
+@media (max-width: 1200px) {
+    .card {
+        .hard-skills,
+        .soft-skills {
+            justify-content: flex-start;
+            align-items: left ;
+            }
+        }
+}
 </style>

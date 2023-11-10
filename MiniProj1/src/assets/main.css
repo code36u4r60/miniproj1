@@ -1,18 +1,19 @@
 @import './base.css';
 
-.container{
-  width: 1120px;
+.container {
+  max-width: 1120px;
 }
 
-a{
+a {
   text-decoration: none;
   transition: color 0.2s ease-in-out;
 }
 
-a:hover{
+a:hover {
   color: #4DB6AC !important;
 }
 
-.router-link-active{
+.router-link-active {
   color: #009688 !important;
 }
+

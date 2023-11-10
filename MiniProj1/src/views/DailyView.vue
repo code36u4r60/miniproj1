@@ -6,16 +6,13 @@ import SkillsCard from '../components/SkillsCard.vue'
 
 <template>
   <main class="container">
-
     <div class="resume">
       <AcademicCard />
       <JobCard />
     </div>
-
     <div class="skills">
       <SkillsCard />
     </div>
-
   </main>
 </template>
 
@@ -33,4 +30,21 @@ main.container {
       gap: 2rem;
     }
   }
+
+@media screen and (max-width: 1200px) {
+  main.container {
+    padding-inline: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  main.container{
+    flex: 1;
+    .resume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  }
+}
 </style>

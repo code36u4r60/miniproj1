@@ -23,7 +23,7 @@ No rodapé da página index.html, bem como nas restantes páginas criadas, deve 
 [Wireframe - MiniProj1](https://www.figma.com/file/SPxIbQjglJ34kFrDOo6Tnm/MiniProj1?type=design&node-id=0%3A1&mode=dev)
 
 
-[ ] Cada aluno deve desenvolver o ficheiro SPA, usando uma framework: VueJS ou AngularJS com os requisitos apresentados.
+[X] Cada aluno deve desenvolver o ficheiro SPA, usando uma framework: VueJS ou AngularJS com os requisitos apresentados.
 
 [ ] Todos os ficheiros desenvolvidos devem ser submetidos na plataforma Git, onde cada aluno deve criar uma conta individual. O projeto no Git deve-se chamar de MiniProj1. A avaliação do projeto será realizada a partir dos ficheiros existentes no Git.
 

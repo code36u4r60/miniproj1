@@ -23,7 +23,7 @@
 
 <style scoped lang="stylus">
 .card {
-    background-color: #D9D9D9;
+    background-color: var(--color-background-mute);
     border-radius: .5rem;
     padding: 1rem;
     flex: 1;
@@ -48,6 +48,7 @@
     .description {
         padding: 1rem;
         text-align: justify;
+        color: var(--color-text);
 
      a{
          color: #4DB6AC;

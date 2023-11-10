@@ -19,19 +19,22 @@ function handleThemeChange() {
             <RouterLink to="/" class="link">
                 <p class="brand">Eduardo.AFQ</p>
             </RouterLink>
-
         </div>
+
         <div class="rigth">
             <div class="links">
                 <RouterLink to="/" class="link">Home</RouterLink>
                 <RouterLink to="/dailylife" class="link">Daily Life</RouterLink>
                 <RouterLink to="/hobbies" class="link">Hobbies</RouterLink>
             </div>
-            <div class="theme" @click="handleThemeChange">
-                <ph-sun v-if="isDarkThemeSelected" :size="32" class="sun" />
-                <ph-moon-stars v-if="!isDarkThemeSelected" :size="32" class="moon" />
-            </div>
         </div>
+
+
+        <div class="theme" @click="handleThemeChange">
+            <ph-sun v-if="isDarkThemeSelected" :size="32" class="sun" />
+            <ph-moon-stars v-if="!isDarkThemeSelected" :size="32" class="moon" />
+        </div>
+
     </section>
 </template>
 
@@ -41,6 +44,7 @@ function handleThemeChange() {
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
+    gap: 2rem;
     
     .left{
         flex: 1;
@@ -65,8 +69,9 @@ function handleThemeChange() {
             display: flex;
             gap: 1rem;
         }
+    }
 
-        .theme{
+    .theme{
             color: var(--color-heading);
             display: flex;
             align-items: center;
@@ -81,8 +86,6 @@ function handleThemeChange() {
             }
         }
 
-    }
-
     .link{
         color: var(--color-heading);
         font-size: 1.2rem;
@@ -91,7 +94,17 @@ function handleThemeChange() {
     }
 
 }
-
+    @media (max-width: 768px) {
+        .pageHeader{
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            .theme{
+                 position: absolute;
+                right : 2rem;
+            }
+        }
+    }
 
 </style>
 

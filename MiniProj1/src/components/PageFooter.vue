@@ -4,7 +4,7 @@
 </script>
 
 <template>
-    <footer class="pageHeader">
+    <footer class="page-footer">
         <div class="left">
             <p>@2023 Eduardo Queirós</p>
             <small>Todos os diretos reservados</small>
@@ -27,7 +27,7 @@
 </template>
 
 <style lang="stylus" scoped>
-.pageHeader {
+.page-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -62,6 +62,14 @@
     }
 }
 
+@media (max-width: 768px) {
+        .page-footer{
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: 2rem;
+
+        }
+    }
 
 </style>
 
