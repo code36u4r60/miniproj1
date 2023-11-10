@@ -86,14 +86,3 @@ body {
   align-items: center;
 }
 
-a{
-  transition: color 0.2s ease-in-out;
-}
-
-a:hover{
-  color: #4DB6AC !important;
-}
-
-.router-link-active{
-  color: #009688 !important;
-}

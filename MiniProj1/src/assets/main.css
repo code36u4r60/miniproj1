@@ -1,20 +1,18 @@
 @import './base.css';
 
-#app {
-  max-width: 1280px;
-  min-height: 100vh !important;
-}
-
-
-
-
 .container{
   width: 1120px;
 }
 
-
-@media (hover: hover) {
-
+a{
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
 }
 
-@media (min-width: 1024px) {}
+a:hover{
+  color: #4DB6AC !important;
+}
+
+.router-link-active{
+  color: #009688 !important;
+}
