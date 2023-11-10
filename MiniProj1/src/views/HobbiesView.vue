@@ -1,9 +1,79 @@
 <script setup lang="ts">
-
+import IconUniv from "../components/icons/IconUniv.vue";
+import IconMoto from "../components/icons/IconMoto.vue";
+import IconMountain from "../components/icons/IconMountain.vue";
 </script>
 
 <template>
   <main class="container">
-    <h1>Hobbies</h1>
+
+    <div class="hobbies">
+      <div class="card">
+        <IconUniv class="icon" />
+        <p class="description">
+          <span class="topic">Estudar</span>
+          Gosto de aprender constantemente e aprofundar meus conhecimentos.
+        </p>
+      </div>
+
+      <div class="card">
+        <IconMoto class="icon" />
+        <p class="description">
+          <span class="topic">Andar de moto</span>
+          Sou entusiasta de andar de moto e explorar novos lugares.
+        </p>
+      </div>
+
+      <div class="card">
+        <IconMountain class="icon" />
+        <p class="description">
+          <span class="topic">Montanhismo e Escalada:</span>
+          Tenho paixão por desafios ao ar livre, escalando montanhas e explorando trilhas.
+        </p>
+      </div>
+    </div>
   </main>
 </template>
+
+<style scoped lang="stylus">
+
+.hobbies{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  .card {
+      background-color: #D9D9D9;
+      border-radius: .5rem;
+      padding: 1rem;
+
+      height: 25rem; 
+      width: 20rem;
+
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;      
+      
+      .icon {
+          height: 4rem;
+          color: var(--color-heading);
+      }
+
+      .description{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem;
+        font-size: 1.25rem;
+        gap: .5rem;
+        font-weight: bold;
+        .topic{
+          font-weight: bolder;
+        }
+      }
+     
+    }
+}
+
+
+</style>

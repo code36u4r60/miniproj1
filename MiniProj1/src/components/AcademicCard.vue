@@ -46,9 +46,9 @@
 
     
     .description {
-        padding: .5rem;
+        padding: 1rem;
         text-align: justify;
-     
+
      a{
          color: #4DB6AC;
          font-weight: bold;
