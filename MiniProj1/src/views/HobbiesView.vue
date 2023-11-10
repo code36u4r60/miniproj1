@@ -91,6 +91,8 @@ import IconMountain from "../components/icons/IconMountain.vue";
   display: flex;
   flex-direction: column;
   gap: 1rem;
+
+  padding-inline: 2rem;
 }
 }
 

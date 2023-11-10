@@ -45,7 +45,7 @@ import IconVueJs from "./icons/IconVueJs.vue";
 
         <div class="soft-skills">
             <h1 class="title">
-                Hard-Skills
+                Soft-Skills
             </h1>
             <div class="skills">
                 <p class="skill"><ph-users-three :size="24" />Trabalho em Equipe</p>
