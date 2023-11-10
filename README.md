@@ -1,12 +1,6 @@
 <div align="center">
-    <img  src=".github/home.jpeg" />
-</div>
-
-<br />
-<br />
-
-<div align="center">
-    <img  src=".github/home-mobile.jpeg" />
+    <img width="680"  style="margin:auto 0" src=".github/home.jpeg" />
+    <img style="margin-left:16px" height="480" src=".github/home-mobile.jpeg" />
 </div>
 
 
